@@ -13,7 +13,9 @@
 	<name>MovieMate-back</name>
 	<description>Spring Api MovieMate</description>
 	<properties>
-		<java.version>11</java.version>
+		<java.version>17</java.version>
+	    <maven.compiler.source>${java.version}</maven.compiler.source>
+  		<maven.compiler.target>${java.version}</maven.compiler.target>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -71,6 +73,15 @@
 							<artifactId>lombok</artifactId>
 						</exclude>
 					</excludes>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
 				</configuration>
 			</plugin>
 		</plugins>

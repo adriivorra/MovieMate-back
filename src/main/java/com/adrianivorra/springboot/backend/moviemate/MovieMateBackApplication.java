@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 public class MovieMateBackApplication {
-//rgt
+//rgtgf
 	public static void main(String[] args) {
 		SpringApplication.run(MovieMateBackApplication.class, args);
 	}
